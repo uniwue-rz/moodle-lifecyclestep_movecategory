@@ -5,6 +5,7 @@ For example, here at the University of Würzburg we use this plugin to move olde
 
 ## Settings
 Site administrators selects one category (from a dropdown) where the courses will be moved to.  
-  
+
+## More information  
 For detailed information on step plugins visit the 
 [Wiki](https://github.com/learnweb/moodle-tool_lifecycle/wiki) of the moodle-tool_lifecycle admin tool.
