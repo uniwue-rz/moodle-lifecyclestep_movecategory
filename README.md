@@ -1,4 +1,5 @@
 # moodle-lifecycle-movecategorystep
+
 [WIP] This is a step-subplugin for the admin tool [moodle-tool_lifecycle](https://github.com/learnweb/moodle-tool_lifecycle). 
 It simply moves the triggered courses to a category which can be specified in the step configuration.
 For example, here at the University of Würzburg we use this plugin to move older courses to an invisible category (before we finally delete them).
