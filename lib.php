@@ -50,7 +50,7 @@ class movecategory extends libbase {
     public function process_course($processid, $instanceid, $course) {
         $categoryid = settings_manager::get_settings(
             $instanceid,
-            SETTINGS_TYPE_STEP
+            settings_type::STEP
         )['categorytomoveto'];
 
         $success = move_courses(
