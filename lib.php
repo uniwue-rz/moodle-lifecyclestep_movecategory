@@ -77,12 +77,12 @@ class movecategory extends libbase {
 
         $elementname = 'categorytomoveto';
         $categories = $DB->get_records('course_categories');
-        $categoriestoshow = array();
-        foreach ($categories as $category) {
-            $categoriestoshow[$category->id] = $category->name;
-        }
+        
 
-        $mform->addElement('select', $elementname, get_string('categorytomoveto', 'lifecyclestep_movecategory'), $categoriestoshow);
+        //Fetch a complete list of courses and let it be shown in a flat hierachical view with all parent branches
+        $displaylist = \core_course_category::make_categories_list('moodle/course:changecategory');  
+
+        $mform->addElement('autocomplete', $elementname, get_string('categorytomoveto', 'lifecyclestep_movecategory'), $displaylist);
         $mform->addHelpButton($elementname, 'categorytomoveto', 'lifecyclestep_movecategory');
         $mform->setType($elementname, PARAM_INT);
     }
