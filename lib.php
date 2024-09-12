@@ -33,6 +33,9 @@ use tool_lifecycle\settings_type;
 defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__ . '/../lib.php');
+// Add moodle course lib
+global $CFG;
+require_once($CFG->dirroot . '/course/lib.php');
 
 class movecategory extends libbase {
 
