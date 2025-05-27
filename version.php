@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version  = 2025052700;
+$plugin->version  = 2025052701;
 $plugin->component = 'lifecyclestep_movecategory';
 $plugin->dependencies = array(
-        'tool_lifecycle' => 2025052700
+        'tool_lifecycle' => 2024042300
 );
