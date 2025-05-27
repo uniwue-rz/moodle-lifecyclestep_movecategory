@@ -27,3 +27,4 @@ $string['pluginname'] = 'Move Category Step';
 
 $string['categorytomoveto'] = 'Target Category';
 $string['categorytomoveto_help'] = 'Set the category which you want to move the courses to.';
+$string['plugindescription'] = 'Moves all triggered courses to a defined course category. ';
